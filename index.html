@@ -14,23 +14,21 @@
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>NextJS — Production framework</h1>
     </header>
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
+        <h2>NextJS — Production framework</h2>
+        <p class="logo-wrapper">
+          <img class="logo-wrapper__logo logo-wrapper__logo--nextjs" src="pictures/nextjs-logo.svg" width="300" />
+          <img class="logo-wrapper__logo logo-wrapper__logo--react" src="pictures/react-logo.svg" width="130" />
+        </p>
+        <p class="copyright right">
+          <a href="https://whatislove.dev/">© Vladyslav Zubko</a>
+        </p>
         <style>
             #cover h2 {
                 margin: 30px 0 0;
-                color: white;
                 text-align: center;
                 font-size: 70px;
             }
@@ -38,13 +36,20 @@
             #cover p {
                 margin: 10px 0 0;
                 text-align: center;
-                color: white;
-                font-style: italic;
                 font-size: 20px;
             }
 
-            #cover p a {
-                color: white;
+            #cover .logo-wrapper {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              margin: 95px 0 0;
+            }
+
+            #cover .logo-wrapper__logo--react {
+              position: absolute;
+              right: 220px;
+              bottom: -30px;
             }
         </style>
     </section>
