@@ -929,8 +929,8 @@
         <code> </code>
         <code>import useSWR from 'swr';</code>
         <code> </code>
-        <code>const DashboardPage = ({ articles }) => {</code>
-        <code> const { data } = useSWR(Api);</code>
+        <code>const DashboardPage = () => {</code>
+        <code> const { data: articles } = useSWR(Api.getArticles);</code>
         <code> </code>
         <code>  return (</code>
         <code>    &lt;ul&gt;</code>
